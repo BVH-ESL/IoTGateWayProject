@@ -1,0 +1,360 @@
+read packet time : 153 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=113/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=114/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=113/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=113/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=117/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=111/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=116/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=114/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=115/255
+
+read packet time : 195 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=113/255
+
+read packet time : 196 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=117/255
+
+read packet time : 250 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=117/255
+
+read packet time : 254 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=116/255
+
+read packet time : 250 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=110/255
+
+read packet time : 252 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=116/255
+
+read packet time : 258 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=120/255
+
+read packet time : 250 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=119/255
+
+read packet time : 250 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=112/255
+
+read packet time : 257 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=112/255
+
+read packet time : 249 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=119/255
+
+read packet time : 254 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=114/255
+
+read packet time : 250 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=113/255
+
+read packet time : 574 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=112/255
+
+read packet time : 580 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=108/255
+
+read packet time : 583 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=116/255
+
+read packet time : 579 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=113/255
+
+read packet time : 574 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=116/255
+
+read packet time : 579 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=110/255
+
+read packet time : 577 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=111/255
+
+read packet time : 578 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=113/255
+
+read packet time : 578 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=115/255
+
+read packet time : 577 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=114/255
+
+read packet time : 576 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=115/255
+
+read packet time : 1882 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=107/255
+
+read packet time : 1879 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=109/255
+
+read packet time : 1885 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=111/255
+
+read packet time : 1881 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=113/255
+
+read packet time : 1882 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=119/255
+
+read packet time : 1882 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=113/255
+
+read packet time : 1884 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=106/255
+
+read packet time : 1881 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=108/255
+
+read packet time : 1884 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=109/255
+
+read packet time : 1883 usec
+received a packet 75 bytes long
+payloadLength : 64 
+LQI/RSSI=112/255
+
+read packet time : 1881 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=111/255
+
+read packet time : 196 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=116/255
+
+read packet time : 201 usec
+received a packet 15 bytes long
+payloadLength : 4 
+LQI/RSSI=112/255
+
+read packet time : 250 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=110/255
+
+read packet time : 358 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=106/255
+
+read packet time : 367 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=108/255
+
+read packet time : 357 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=110/255
+
+read packet time : 358 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=112/255
+
+read packet time : 358 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=114/255
+
+read packet time : 358 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=115/255
+
+read packet time : 357 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=112/255
+
+read packet time : 358 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=112/255
+
+read packet time : 358 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=110/255
+
+read packet time : 358 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=115/255
+
+read packet time : 358 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=116/255
+
+read packet time : 17896279 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=116/255
+
+read packet time : 584 usec
+received a packet 13 bytes long
+payloadLength : 2 
+LQI/RSSI=113/255
+
+read packet time : 206 usec
+received a packet 19 bytes long
+payloadLength : 8 
+LQI/RSSI=110/255
+
+read packet time : 358 usec
+received a packet 27 bytes long
+payloadLength : 16 
+LQI/RSSI=114/255
+
+read packet time : 579 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=106/255
+
+read packet time : 1013 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=110/255
+
+read packet time : 1013 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=109/255
+
+read packet time : 17896711 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=104/255
+
+read packet time : 1014 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=117/255
+
+read packet time : 1014 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=110/255
+
+read packet time : 1014 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=115/255
+
+read packet time : 1014 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=110/255
+
+read packet time : 1014 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=113/255
+
+read packet time : 1015 usec
+received a packet 43 bytes long
+payloadLength : 32 
+LQI/RSSI=109/255
+
