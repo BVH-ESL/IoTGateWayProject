@@ -9,10 +9,13 @@
 // mRF select SN "esl/mrf/0x1234/0x16/in/cmd"
 // mRF broadcast "esl/mrf/0xFFFF/0x16/in/cmd"
 
+// v1.1.1 support ESP32 and fix bug when resive form mrf
 
-// include WiFi and MQTT library
-#include <ESP8266WiFi.h>//
-//#include <WiFi.h>/
+
+// include WiFi and MQTT libra//ry
+#
+//#include <ESP8266WiFi.h>///
+#include <WiFi.h>//
 #include <PubSubClient.h>
 
 // init WiFi AP
@@ -94,8 +97,10 @@ void initMRF() {
 
 void handle_rx() {
   char * payloadTmp;
+  Serial.write(mrf.get_rxinfo()->rx_data, mrf.rx_datalength());
   payloadTmp = strtok((char *)mrf.get_rxinfo()->rx_data, " ");//
-  //  Serial.println(payloadTmp);
+  Serial.println("");
+//    Serial.println(payloadTmp);/
   if (payloadTmp != NULL) {
     if (cmd == CMD_CHECK) {
       sprintf(oTopic, "esl/%s/0x%x/0x%x/out/status", sensorNodeLink, sensorNodeAddr, sensorNodePAN);
@@ -218,14 +223,4 @@ void loop() {
     if (client.connected())
       client.loop();
   }
-
-  // check state
-  //  switch (state) {
-  //    case ST_IDLE:
-  //      break;
-  //
-  //    default:
-  //      state = ST_IDLE;
-  //      break;
-  //  }
 }

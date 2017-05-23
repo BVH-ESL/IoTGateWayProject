@@ -10,9 +10,10 @@
 // mRF broadcast "esl/mrf/0xFFFF/0x16/in/cmd"
 
 
-// include WiFi and MQTT library
-#include <ESP8266WiFi.h>//
-//#include <WiFi.h>/
+// include WiFi and MQTT libra//ry
+#
+//#include <ESP8266WiFi.h>///
+#include <WiFi.h>//
 #include <PubSubClient.h>
 
 // init WiFi AP
@@ -95,7 +96,7 @@ void initMRF() {
 void handle_rx() {
   char * payloadTmp;
   payloadTmp = strtok((char *)mrf.get_rxinfo()->rx_data, " ");//
-  //  Serial.println(payloadTmp);
+    Serial.println(payloadTmp);
   if (payloadTmp != NULL) {
     if (cmd == CMD_CHECK) {
       sprintf(oTopic, "esl/%s/0x%x/0x%x/out/status", sensorNodeLink, sensorNodeAddr, sensorNodePAN);

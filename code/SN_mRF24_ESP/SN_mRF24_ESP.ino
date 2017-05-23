@@ -46,11 +46,11 @@ void setup() {
   mrf.reset();
   mrf.init();
   mrf.write_short(MRF_RFCON3, 0x00);
-  mrf.set_pan(0x16);
+  mrf.set_pan(0x19);
   Serial.print("PAN ");
   Serial.println(mrf.get_pan());
   // This is _our_ address
-  mrf.address16_write(0x1234);
+  mrf.address16_write(0x1235);
   Serial.print("Addr ");
   Serial.println(mrf.address16_read());
   // uncomment if you want to enable PA/LNA external control
@@ -71,16 +71,16 @@ void loop() {
       if (cmd == CMD_GET) {
         break;
       } else if (cmd == CMD_ACK) {
-        memcpy(payloadBuf, "#ACKED", PAYLOAD_BUF_SIZE);
+        strncpy(payloadBuf, "#ACKED", strlen("#ACKED"));
         payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
-        Serial.print(payloadBuf);
-        Serial.println("ss");
+        Serial.println(payloadBuf);
         mrf.send16(gateWayAddr, payloadBuf);
         strcpy(payloadBuf, payloadDummy);
         cmd = CMD_NONE;
       } else if (cmd == CMD_TEMP) {
-        strcpy(payloadBuf, "129");
+        strncpy(payloadBuf, "129", strlen("129"));
         payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
+        Serial.println(payloadBuf);
         mrf.send16(gateWayAddr, payloadBuf);
         strcpy(payloadBuf, payloadDummy);
         cmd = CMD_NONE;
@@ -105,8 +105,8 @@ void checkCMD(char * input){
 void handle_rx() {
   cmd = CMD_NONE;
   char * payloadTmp;
-  Serial.write(mrf.get_rxinfo()->rx_data, mrf.rx_datalength());
-  Serial.println(" rxData");
+//  Serial.write(mrf.get_rxinfo()->rx_data, mrf.rx_datalength());/
+//  Serial.println(" rxData");/
   payloadTmp = strtok((char *)mrf.get_rxinfo()->rx_data, " ");//
 //  Serial.println(payloadTmp);
   if (payloadTmp != NULL) {

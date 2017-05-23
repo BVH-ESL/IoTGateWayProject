@@ -34,16 +34,16 @@ void setup() {
     payloadDummy[i] = ' ';
   }
   payloadDummy[PAYLOAD_BUF_SIZE] = '\0';
-strcpy(payloadBuf, payloadDummy);
+  strcpy(payloadBuf, payloadDummy);
   SPI.setFrequency(4000000ul);
   mrf.reset();
   mrf.init();
   mrf.write_short(MRF_RFCON3, 0x00);
-  mrf.set_pan(0x16);
+  mrf.set_pan(0x19);
   Serial.print("PAN ");
   Serial.println(mrf.get_pan());
   // This is _our_ address
-  mrf.address16_write(0x1234);
+  mrf.address16_write(0x1235);
   Serial.print("Addr ");
   Serial.println(mrf.address16_read());
   // uncomment if you want to enable PA/LNA external control
@@ -61,23 +61,21 @@ void loop() {
   mrf.check_flags(&handle_rx, &handle_tx);
   switch (state) {
     case ST_RST:
-      //      if (cmd == CMD_GET) {
-      //        break;
-      //      } else if (cmd == CMD_ACK) {
-      //        memcpy(payloadBuf, "#ACKED", PAYLOAD_BUF_SIZE);
-      //        payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
-      //        Serial.print(payloadBuf);
-      //        Serial.println("ss");
-      //        mrf.send16(gateWayAddr, payloadBuf);
-      //        strcpy(payloadBuf, payloadDummy);
-      //        cmd = CMD_NONE;
-      //      } else if (cmd == CMD_TEMP) {
-      //        strcpy(payloadBuf, "129");
-      //        payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
-      //        mrf.send16(gateWayAddr, payloadBuf);
-      //        strcpy(payloadBuf, payloadDummy);
-      //        cmd = CMD_NONE;
-      //      }
+      if (cmd == CMD_GET) {
+        break;
+      } else if (cmd == CMD_ACK) {
+        memcpy(payloadBuf, "#ACKED", strlen("#ACKED"));
+        payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
+        mrf.send16(gateWayAddr, payloadBuf);
+        strcpy(payloadBuf, payloadDummy);
+        cmd = CMD_NONE;
+      } else if (cmd == CMD_TEMP) {
+        strncpy(payloadBuf, "129", strlen("129"));
+        payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
+        mrf.send16(gateWayAddr, payloadBuf);
+        strcpy(payloadBuf, payloadDummy);
+        cmd = CMD_NONE;
+      }
       break;
     default:
       state = ST_RST;
@@ -106,19 +104,19 @@ void handle_rx() {
   if (payloadTmp != NULL) {
     if (!strcmp(payloadTmp, "CHECK")) {
       cmd = CMD_ACK;
-      strncpy(payloadBuf, "#ACKED", 6);
-      payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
-      Serial.print(payloadBuf);
-      Serial.println("ss");
-      mrf.send16(gateWayAddr, payloadBuf);
-      strcpy(payloadBuf, payloadDummy);
+      //      strncpy(payloadBuf, "#ACKED", 6);
+      //      payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
+      //      Serial.print(payloadBuf);
+      //      Serial.println("ss");
+      //      mrf.send16(gateWayAddr, payloadBuf);
+      //      strcpy(payloadBuf, payloadDummy);
     } else if (!strcmp(payloadTmp, "GET/TEMP")) {
       cmd = CMD_TEMP;
-      strncpy(payloadBuf, "129", 3);
-      payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
-      Serial.print(payloadBuf);
-      Serial.println("ss");
-      mrf.send16(gateWayAddr, payloadBuf);
+      //      strncpy(payloadBuf, "129", 3);
+      //      payloadBuf[PAYLOAD_BUF_SIZE] = '\0';
+      //      Serial.print(payloadBuf);
+      //      Serial.println("ss");
+      //      mrf.send16(gateWayAddr, payloadBuf);
     }
   }
 }
